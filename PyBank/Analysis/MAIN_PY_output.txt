@@ -1,0 +1,26 @@
+
+(base) Brandons-MBP:Resources bm624$ /Library/Frameworks/Python.framework/Versions/3.8/bin/python3 /Users/bm624/Documents/projects/bootcampDS/git/03-python_challenge_HW/PyBank/Resources/MAIN.py
+Header: ['Date', 'Profit/Losses']
+86
+38382578
+-2315.1176470588234
+1926159
+Feb-2012
+-2196167
+Sep-2013
+
+
+
+Financial Analyses
+----------------------------
+
+Total number of months:  86
+Total Profit over Period: $ 38382578
+Total Avg. in Profits/Losses over period: $ -2315.1176470588234
+Greatest Profit Increase and Month and Year it occurrred: $ 1926159 Feb-2012
+Greatest Decrease in Profit and Month and Year it occurred: $ -2196167 Sep-2013
+
+
+
+
+(base) Brandons-MBP:Resources bm624$ 
