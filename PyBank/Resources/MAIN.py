@@ -16,7 +16,8 @@
 import os
 import csv 
 
-csvpath = os.path.join('..','Resources','budget_data.csv')
+csvpath = os.path.join(".","Resources","budget_data.csv")
+pathout = os.path.join("Analysis","budget_analysis.txt")
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ',')
     csv_header = next(csvreader) #in this case reads the first row header row, if there were more it would iterate through them 
@@ -84,3 +85,14 @@ print("Total Avg. in Profits/Losses over period: $",Total / len(profit_change))
 print("Greatest Profit Increase and Month and Year it occurrred: $",profit_increase, month_increase)
 print("Greatest Decrease in Profit and Month and Year it occurred: $",profit_decrease, month_decrease)
 print('\n\n\n')
+
+with open(pathout, "w") as txt_file:
+    txt_file.write(f"Brandon McDermott\n\n\n")
+    txt_file.write(f"Financial Analyses")
+    txt_file.write(f"----------------------------\n")
+    txt_file.write(f"Total number of months: {len(month)}\n")
+    txt_file.write(f"Total Profit over Period: ${netprofit}\n")
+    txt_file.write(f"Total Avg. in Profits/Losses over period: ${Total} / {len(profit_change)}\n")
+    txt_file.write(f"Greatest Profit Increase and Month and Year it occurrred: ${profit_increase} ({month_increase})\n")
+    txt_file.write(f"Greatest Decrease in Profit and Month and Year it occurred: ${profit_decrease} ({month_decrease})\n")
+    txt_file.write(f'\n\n\n')
